@@ -1,0 +1,61 @@
+<!DOCTYPE>
+<html>
+  <head></head>
+
+  <body>
+    <header>
+      <h1><%= link_to "電算ライブラリ", "/"%> </h1>
+      <div class="topbar">
+        <%if user_signed_in? %>
+          <h3><%= link_to current_user.email, "/#{current_user.id}/user" %></h3>
+          <h3><%= link_to "ログアウト", destroy_user_session_path, method:"delete" %></h3>
+          <h3><%= link_to "購入希望", "wantBook" %></h3>
+        <% else %>
+          <h3><%= link_to "ログイン", new_user_session_path %></h3>
+        <% end %>
+        <h3><%= link_to "問い合わせ", "inquiry" %></h3>
+        <h3><%= link_to "ヘルプ", "help" %></h3>
+      </div>
+    </header>
+    <main>
+      <div class="searchBar">
+        <%= form_tag "/sorted" do %>
+          <%= text_field_tag :search %>
+          <%= submit_tag :検索 %>
+        <% end %>
+      </div>
+      <div class="bookList">
+        <table border="1">
+          <tr>
+            <th>タイトル</th>
+            <th>著者</th>
+            <th>出版者</th>
+            <th>出版年</th>
+            <th>ジャンル</th>
+            <th>貸し出し状態</th>
+          </tr>
+          <% @books.each do |book| %>
+            <tr align="center">
+              <td><%= link_to book.title, "#{book.id}" %></td>
+              <td><%= book.author %></td>
+              <td><%= book.publisher %></td>
+              <td><%= book.publish_date %></td>
+              <td><%= book.genre %></td>
+              <%if book.status %>
+                <td>在庫あり<td>
+              <% else %>
+                <td>貸出中</td>
+              <% end %>
+            </tr>
+          <% end %>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <div class="copyright">
+        <p>© Copyright 2018 電算研 All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+
+</html>

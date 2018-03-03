@@ -1,0 +1,40 @@
+<header>
+  <h1>電算ライブラリ</h1>
+</header>
+<main>
+  <dev class="details">
+    <h2>タイトル
+      <%= @book.title %></h1>
+    <h3>著者
+      <%= @book.author %></h3>
+    <h3>出版者
+      <%= @book.publisher %></h3>
+    <h3>出版年
+      <%= @book.publish_date %></h3>
+    <h3>ジャンル
+      <%= @book.genre %></h3>
+    <h3>ISBN
+      <%= @book.isbn %></h3>
+
+    <% if @book.status %>
+      <h3>在庫あり</h3>
+      <% if user_signed_in? %>
+        <%= form_tag("/#{@book.id}/rental") do %>
+        <div class="rentalBotton">
+          <%= submit_tag :借りる%>
+        </div>
+      <% end %>
+    <% end %>
+    <% elsif @book.rental_user===current_user.email %>
+      <%= form_tag("/#{@book.id}/return") do %>
+      <div class="returnBotton">
+        <% session[:rental_user] = current_user.id %>
+        <%= submit_tag :返す%>
+      </div>
+      <% end %>
+    <% else %>
+      <h3>貸出中</h3>
+      <h3>借り出し人<%= @book.rental_user %></h3>
+    <% end %>
+  </dev>
+</main>

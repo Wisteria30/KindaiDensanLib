@@ -1,0 +1,12 @@
+<main>
+  <%= form_tag "/url" do %>
+  <div class="maintitle">
+    <h2>購入希望</h2>
+  </div>
+  <div class="searchurl">
+    <p>欲しい本のAmazonURLを貼ってください</p>
+    <%= text_field_tag :amazonurl %>
+    <%= submit_tag :申請 %>
+  </div>
+<% end %>
+</main>

@@ -1,0 +1,32 @@
+<main>
+  <div class="details">
+    <h1><%= current_user.email %></h1>
+    <h2><%= link_to "パスワードの変更", edit_user_registration_path %></h2>
+  </div>
+  <div class="rentalList">
+    <% if @books.count!=0 %>
+    <table border="1">
+      <tr>
+        <th>タイトル</th>
+        <th>著者</th>
+        <th>出版者</th>
+        <th>出版年</th>
+        <th>ジャンル</th>
+        <th>ISBN</th>
+      </tr>
+      <% @books.each do |book| %>
+      <tr align="center">
+        <td><%= link_to book.title, "/#{book.id}" %></td>
+        <td><%= book.author %></td>
+        <td><%= book.publisher %></td>
+        <td><%= book.publish_date %></td>
+        <td><%= book.genre %></td>
+        <td><%= book.isbn %></td>
+      </tr>
+      <% end %>
+    </table>
+    <% else %>
+    <h2>貸出中の本はありません</h2>
+    <% end %>
+  </div>
+</main>
