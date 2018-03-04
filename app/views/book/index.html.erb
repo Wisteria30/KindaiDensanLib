@@ -4,7 +4,8 @@
 
   <body>
     <header>
-      <h1><%= link_to "電算ライブラリ", "/"%> </h1>
+      <h1><%= link_to "電算ライブラリ", "/"%>
+      </h1>
       <div class="topbar">
         <%if user_signed_in? %>
           <h3><%= link_to current_user.email, "/#{current_user.id}/user" %></h3>
@@ -19,10 +20,18 @@
     </header>
     <main>
       <div class="searchBar">
-        <%= form_tag "/sorted" do %>
-          <%= text_field_tag :search %>
-          <%= submit_tag :検索 %>
-        <% end %>
+        <script>
+          (function () {
+            var cx = '008809807210549102714:vjcjiq08wrq';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search></gcse:search>
       </div>
       <div class="bookList">
         <table border="1">
@@ -43,19 +52,19 @@
               <td><%= book.genre %></td>
               <%if book.status %>
                 <td>在庫あり<td>
-              <% else %>
-                <td>貸出中</td>
+                  <% else %>
+                    <td>貸出中</td>
+                  <% end %>
+                </tr>
               <% end %>
-            </tr>
-          <% end %>
-        </table>
-      </div>
-    </main>
-    <footer>
-      <div class="copyright">
-        <p>© Copyright 2018 電算研 All rights reserved.</p>
-      </div>
-    </footer>
-  </body>
+            </table>
+          </div>
+        </main>
+        <footer>
+          <div class="copyright">
+            <p>© Copyright 2018 電算研 All rights reserved.</p>
+          </div>
+        </footer>
+      </body>
 
-</html>
+    </html>
