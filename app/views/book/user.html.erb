@@ -1,6 +1,9 @@
 <div class="container">
-  <div class="details">
+  <div class="user">
     <h1><%= current_user.email %></h1>
+    <% if current_user.admin_flg %>
+      <h2><%= link_to "管理者ページ", rails_admin_path %></h2>
+    <% end %>
     <h2><%= link_to "パスワードの変更", edit_user_registration_path %></h2>
   </div>
   <div class="rentalList">

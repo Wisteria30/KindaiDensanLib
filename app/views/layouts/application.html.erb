@@ -19,12 +19,12 @@
         <%if user_signed_in? %>
           <li><%= link_to current_user.email, "/#{current_user.id}/user" %></li>
           <li><%= link_to "ログアウト", destroy_user_session_path, method:"delete" %></li>
-          <li><%= link_to "購入希望", "wantBook" %></li>
+          <li><%= link_to "購入希望", "/wantBook" %></li>
         <% else %>
           <li><%= link_to "ログイン", new_user_session_path %></li>
         <% end %>
-        <li><%= link_to "問い合わせ", "inquiry" %></li>
-        <li><%= link_to "ヘルプ", "help" %></li>
+        <li><%= link_to "問い合わせ", "/inquiry" %></li>
+        <li><%= link_to "ヘルプ", "/help" %></li>
       </ul>
     </header>
     <main>
@@ -33,18 +33,18 @@
         <%= flash[:notice] %>
       </div>
     <% end %>
+      <p class="alert"><%= alert %></p>
     <%= yield %>
   </main>
   <div id="footer">
   <footer>
     <div class="densanhp">
-      <%= link_to "近畿大学電子計算機研究会", "http://kindai-csg.com/" %>
+      <%= link_to "近畿大学 電子計算機研究会", "http://kindai-csg.com/", :target=>["_blank"] %>
     </div>
     <div class="copyright">
       Copyright(C) 2018 CSG All rights reserved.
     </div>
   </footer>
 </div>
-  <p class="alert"><%= alert %></p>
 </body>
 </html>

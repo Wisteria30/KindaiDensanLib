@@ -3,8 +3,15 @@ class BookController < ApplicationController
     @books = Book.all
   end
 
-  def sorted
+  def search
+    search = params[:search]
+    @books = Book.where("title like '%"+ search + "%' ").or(
+    Book.where("author like '%"+ search + "%' ")).or(
+    Book.where("publisher like '%"+ search + "%' ")).or(
+    Book.where("genre like '%"+ search + "%' "))
+  end
 
+  def sorted
   end
 
   def show
@@ -29,13 +36,8 @@ class BookController < ApplicationController
     end
   end
 
-
-
   def wantBook
-
   end
-
-
 
   def url
     flash[:notice] = "#{params[:amazonurl]}"

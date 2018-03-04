@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   get '/' => "book#index"
+  get '/search' => "book#search"
   get '/wantBook' => "book#wantBook"
   post '/url' => "book#url"
   get '/inquiry' => "book#inquiry"
