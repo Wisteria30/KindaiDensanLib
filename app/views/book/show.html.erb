@@ -1,8 +1,5 @@
-<header>
-  <h1>電算ライブラリ</h1>
-</header>
-<main>
-  <dev class="details">
+<div class="container">
+  <div class="details">
     <h2>タイトル
       <%= @book.title %></h1>
     <h3>著者
@@ -29,12 +26,12 @@
       <%= form_tag("/#{@book.id}/return") do %>
       <div class="returnBotton">
         <% session[:rental_user] = current_user.id %>
-        <%= submit_tag :返す%>
-      </div>
+          <%= submit_tag :返す%>
+        </div>
       <% end %>
     <% else %>
       <h3>貸出中</h3>
       <h3>借り出し人<%= @book.rental_user %></h3>
     <% end %>
-  </dev>
-</main>
+  </div>
+</div>

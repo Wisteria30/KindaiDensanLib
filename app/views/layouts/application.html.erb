@@ -5,6 +5,8 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- /jQueryを読み込む -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -25,14 +27,15 @@
         <li><%= link_to "ヘルプ", "help" %></li>
       </ul>
     </header>
-
+    <main>
     <% if flash[:notice] %>
       <div class="flash">
         <%= flash[:notice] %>
       </div>
     <% end %>
     <%= yield %>
-  </body>
+  </main>
+  <div id="footer">
   <footer>
     <div class="densanhp">
       <%= link_to "近畿大学電子計算機研究会", "http://kindai-csg.com/" %>
@@ -41,5 +44,7 @@
       Copyright(C) 2018 CSG All rights reserved.
     </div>
   </footer>
+</div>
   <p class="alert"><%= alert %></p>
+</body>
 </html>
