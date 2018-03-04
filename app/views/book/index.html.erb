@@ -2,25 +2,9 @@
 <html>
 
   <head>
-    
   </head>
 
   <body>
-    <header>
-      <h1><%= link_to "電算ライブラリ", "/"%>
-      </h1>
-      <div class="topbar">
-        <%if user_signed_in? %>
-          <h3><%= link_to current_user.email, "/#{current_user.id}/user" %></h3>
-          <h3><%= link_to "ログアウト", destroy_user_session_path, method:"delete" %></h3>
-          <h3><%= link_to "購入希望", "wantBook" %></h3>
-        <% else %>
-          <h3><%= link_to "ログイン", new_user_session_path %></h3>
-        <% end %>
-        <h3><%= link_to "問い合わせ", "inquiry" %></h3>
-        <h3><%= link_to "ヘルプ", "help" %></h3>
-      </div>
-    </header>
     <main>
       <div class="container">
       <div class="searchBar">
@@ -67,10 +51,5 @@
           </div>
         </div>
         </main>
-        <footer>
-          <div class="copyright">
-            <p>© Copyright 2018 Wisteria30 All rights reserved.</p>
-          </div>
-        </footer>
       </body>
     </html>

@@ -9,8 +9,34 @@
   </head>
 
   <body>
+    <header>
+      <div class="header-logo">
+      <%= link_to "電算ライブラリ", "/"%>
+    </div>
+      <ul class="header-menus">
+        <%if user_signed_in? %>
+          <li><%= link_to current_user.email, "/#{current_user.id}/user" %></li>
+          <li><%= link_to "ログアウト", destroy_user_session_path, method:"delete" %></li>
+          <li><%= link_to "購入希望", "wantBook" %></li>
+        <% else %>
+          <li><%= link_to "ログイン", new_user_session_path %></li>
+        <% end %>
+        <li><%= link_to "問い合わせ", "inquiry" %></li>
+        <li><%= link_to "ヘルプ", "help" %></li>
+      </ul>
+    </header>
+
+    <% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
-  <p class="notice"><%= notice %></p>
+  <footer>
+    <div class="copyright">
+      © Copyright 2018 Wisteria30 All rights reserved.
+    </div>
+  </footer>
   <p class="alert"><%= alert %></p>
 </html>

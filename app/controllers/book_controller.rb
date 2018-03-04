@@ -9,7 +9,12 @@ class BookController < ApplicationController
 
   def show
     @book = Book.find_by(id: params[:id])
-    @books = Book.where(rental_user: current_user.email)
+    begin
+      @books = Book.where(rental_user: current_user.email)
+    rescue => e
+      flash[:notice] ="ログインしてください"
+      redirect_to("/")
+    end
   end
 
   def rental
@@ -27,7 +32,7 @@ class BookController < ApplicationController
 
 
   def wantBook
-    
+
   end
 
 
