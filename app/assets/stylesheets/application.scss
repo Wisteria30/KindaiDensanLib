@@ -135,11 +135,16 @@
    height: auto;
    width: 100%;
    background-color: black;
+   text-align: center;
+   padding: 4px 0;
  }
 
- .copyright {
-   text-align: center;
+ .densanhp a{
    padding: 10px;
    color: white;
    font-size: 15px;
+ }
+ .copyright {
+   color: white;
+   font-size: 13px;
  }
