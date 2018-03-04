@@ -18,7 +18,7 @@
 
     <% if @book.status %>
       <h3>在庫あり</h3>
-      <% if user_signed_in? %>
+      <% if user_signed_in? && @books.count < 3 %>
         <%= form_tag("/#{@book.id}/rental") do %>
         <div class="rentalBotton">
           <%= submit_tag :借りる%>

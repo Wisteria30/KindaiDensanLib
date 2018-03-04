@@ -4,11 +4,12 @@ class BookController < ApplicationController
   end
 
   def sorted
-    
+
   end
 
   def show
     @book = Book.find_by(id: params[:id])
+    @books = Book.where(rental_user: current_user.email)
   end
 
   def rental
@@ -23,13 +24,20 @@ class BookController < ApplicationController
     end
   end
 
+
+
   def wantBook
+    
   end
+
+
 
   def url
     flash[:notice] = "#{params[:amazonurl]}"
     redirect_to "/"
   end
+
+
 
   def user
     @books = Book.where(rental_user: current_user.email)

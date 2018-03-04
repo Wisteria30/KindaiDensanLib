@@ -1,12 +1,13 @@
-<main>
-  <%= form_tag "/url" do %>
-  <div class="maintitle">
-    <h2>購入希望</h2>
+<div class='content'>
+  <div id="search-box">
+    <%= form_tag('/', method: :get) do %>
+        <%= text_field_tag :book, "",  id: "book_search", name: "keyword",
+         placeholder: "キーワードを打ち込んでください", style: "width: 200px;"%>
+         <button title="検索" type="submit">検索</button>
+    <% end %>
   </div>
-  <div class="searchurl">
-    <p>欲しい本のAmazonURLを貼ってください</p>
-    <%= text_field_tag :amazonurl %>
-    <%= submit_tag :申請 %>
+  <h2>検索結果</h2>
+  <div id='book_list'>
+    <!-- コメントアウトしておく -->
   </div>
-<% end %>
-</main>
+</div>
