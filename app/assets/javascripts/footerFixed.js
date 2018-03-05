@@ -8,7 +8,7 @@
  *  http://blog.webcreativepark.net
  *
  *--------------------------------------------------------------------------*/
-/**
+
 new function(){
 
 	var footerId = "footer";
@@ -72,4 +72,3 @@ new function(){
 	addEvent(window,"resize",footerFixed);
 
 }
-**/

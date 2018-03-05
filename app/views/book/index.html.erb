@@ -1,10 +1,26 @@
 <div class="container">
-  <div class="searchBar">
+  <div class="admin-notice">
+    <% if user_signed_in? && current_user.admin_flg && @notices.count != 0%>
+      <h2><%= link_to "お知らせがあります", "/notice" %></h2>
+      <% end %>
+    </div>
     <%= form_tag "/search", {method: "get"} do %>
-      <%= text_field_tag :search %>
-      <%= submit_tag :検索 %>
+    <div class="searchBar">
+    <!--<form class="form-inline">
+    <div class="form-group">
+      <input name="search" class="form-control" placeholder="書籍検索" type="text" style="font-size:20px">
+    </div>
+      <button type="submit" class="btn btn-default">検索</button>
+    </form>
+  -->
+  <div class="input-group">
+	<input type="text" name="search" class="form-control" placeholder="キーワードを入力..." style="font-size:20px">
+	<span class="input-group-btn">
+		<button type="submit" class="btn btn-default" >検索</button>
+	</span>
+</div>
+</div>
     <% end %>
-  </div>
   <div class="bookList">
     <div class="table-responsive">
       <table class="table table-striped table-bordered text-center">

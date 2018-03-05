@@ -1,37 +1,55 @@
 <div class="container">
-  <div class="details">
-    <h2>タイトル
-      <%= @book.title %></h1>
-    <h3>著者
-      <%= @book.author %></h3>
-    <h3>出版者
-      <%= @book.publisher %></h3>
-    <h3>出版年
-      <%= @book.publish_date %></h3>
-    <h3>ジャンル
-      <%= @book.genre %></h3>
-    <h3>ISBN
-      <%= @book.isbn %></h3>
+  <div class="book-details">
+    <div class="title">
+      <h1><%= @book.title %>/<%= @book.author %>著</h1>
+    </div>
+    <div class="table-responsive">
+      <table class="table details text-center">
+        <tr>
+          <th>出版者</th>
+          <td><%= @book.publisher %></td>
+        </tr>
+        <tr>
+          <th>出版年</th>
+          <td><%= @book.publish_date %></td>
+        </tr>
+        <tr>
+          <th>ジャンル</th>
+          <td><%= @book.genre %></td>
+        </tr>
+        <tr>
+          <th>ISBN</th>
+          <td><%= @book.isbn %></td>
+        </tr>
 
-    <% if @book.status %>
-      <h3>在庫あり</h3>
-      <% if user_signed_in? && @books.count < 3 %>
-        <%= form_tag("/#{@book.id}/rental") do %>
-        <div class="rentalBotton">
-          <%= submit_tag :借りる%>
-        </div>
-      <% end %>
-    <% end %>
-    <% elsif @book.rental_user===current_user.email %>
-      <%= form_tag("/#{@book.id}/return") do %>
-      <div class="returnBotton">
-        <% session[:rental_user] = current_user.id %>
-          <%= submit_tag :返す%>
-        </div>
-      <% end %>
-    <% else %>
-      <h3>貸出中</h3>
-      <h3>借り出し人<%= @book.rental_user %></h3>
-    <% end %>
+        <tr>
+        <% if @book.status %>
+            <th>在庫あり</th>
+            <% if user_signed_in? && @books.count < 3 %>
+              <div class="rentalBotton">
+                <td>
+                  <%= form_tag("/#{@book.id}/rental") do %>
+                  <button type="submit" class="btn btn-default">借りる</button>
+                  <% end %>
+                </td>
+              </div>
+          <% end %>
+          <% elsif @book.rental_user===current_user.email %>
+            <div class="returnBotton">
+              <% session[:rental_user] = current_user.id %>
+                <th></th>
+                <td>
+                  <%= form_tag("/#{@book.id}/return") do %>
+                  <button type="submit" class="btn btn-default">返却</button>
+                  <% end %>
+                </td>
+              </div>
+          <% else %>
+            <th>貸出中</th>
+            <td><%= @book.rental_user %></td>
+        <% end %>
+      </tr>
+      </table>
+    </div>
   </div>
 </div>

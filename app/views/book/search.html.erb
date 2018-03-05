@@ -1,8 +1,13 @@
 <div class="container">
+  <div class="maintitle">
   <div class="searchResult">
-    <h2>検索結果</h2>
+    <h1>検索結果</h1>
+  </div>
+</div>
+  <div class="subtitle">
     <% if @books.count == 0 %>
       <h2>一致するものがありませんでした</h2>
+    </div>
     <% else %>
       <div class="bookList">
         <div class="table-responsive">

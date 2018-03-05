@@ -1,6 +1,22 @@
 class BookController < ApplicationController
   def index
     @books = Book.all
+    @notices = Notice.where(read: false)
+  end
+
+  def notice
+    @notices = Notice.where(read: false)
+  end
+
+  def detail
+    @notice = Notice.find_by(id: params[:id])
+  end
+
+  def read
+    @notice = Notice.find_by(id: params[:id])
+    @notice.read = true
+    @notice.save
+    redirect_to "/notice"
   end
 
   def search
@@ -9,9 +25,6 @@ class BookController < ApplicationController
     Book.where("author like '%"+ search + "%' ")).or(
     Book.where("publisher like '%"+ search + "%' ")).or(
     Book.where("genre like '%"+ search + "%' "))
-  end
-
-  def sorted
   end
 
   def show
@@ -40,11 +53,37 @@ class BookController < ApplicationController
   end
 
   def url
-    flash[:notice] = "#{params[:amazonurl]}"
-    redirect_to "/"
+      @type = "購入申請"
+      @notice = Notice.new(
+        title: @type,
+        body: params[:amazonurl],
+        sender: current_user.id,
+        read: false
+      )
+    if @notice.save
+      redirect_to "/"
+    else
+      render("wantBook")
+    end
   end
 
+  def inquiry
+  end
 
+  def demand
+    @type = "問い合わせ"
+    @notice = Notice.new(
+      title: @type,
+      body: params[:body],
+      sender: current_user.id,
+      read: false
+    )
+    if @notice.save
+      redirect_to "/"
+    else
+      render("inquiry")
+    end
+  end
 
   def user
     @books = Book.where(rental_user: current_user.email)

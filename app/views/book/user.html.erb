@@ -1,10 +1,15 @@
 <div class="container">
   <div class="user">
-    <h1><%= current_user.email %></h1>
+    <div class="maintitle">
+    <span class="biggestchar"><%= current_user.email %></span>
     <% if current_user.admin_flg %>
-      <h2><%= link_to "管理者ページ", rails_admin_path %></h2>
+      <span class="biggerchar"><%= link_to "管理者ページ", rails_admin_path %></span>
     <% end %>
-    <h2><%= link_to "パスワードの変更", edit_user_registration_path %></h2>
+    <span class="biggerchar"><%= link_to "パスワードの変更", edit_user_registration_path %></span>
+  </div>
+  </div>
+  <div class="subtitle">
+    <h2>借りている本</h2>
   </div>
   <div class="rentalList">
     <% if @books.count!=0 %>
@@ -16,7 +21,6 @@
             <th>出版者</th>
             <th>出版年</th>
             <th>ジャンル</th>
-            <th>ISBN</th>
           </tr>
           <% @books.each do |book| %>
             <tr align="center">
@@ -25,7 +29,6 @@
               <td><%= book.publisher %></td>
               <td><%= book.publish_date %></td>
               <td><%= book.genre %></td>
-              <td><%= book.isbn %></td>
             </tr>
           <% end %>
         </table>

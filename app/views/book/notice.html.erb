@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="maintitle">
+  <% if @notices.count == 0 %>
+  <h1>お知らせはありません</h1>
+  <% else %>
+<h1>お知らせ画面</h1>
+<% end %>
+</div>
+<div class="noticeList">
+  <div class="table-responsive">
+    <table class="table table-striped text-center">
+      <% @notices.each do |notice| %>
+        <tr>
+          <td><%= link_to notice.title, "/notice/#{notice.id}" %></td>
+          <td><%= User.find_by(id: notice.sender).email %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
+</div>

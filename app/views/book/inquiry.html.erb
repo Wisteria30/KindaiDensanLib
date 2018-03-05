@@ -1,3 +1,21 @@
 <div class="container">
-<h1>問い合わせ</h1>
+  <%= form_tag "/demand" do %>
+  <div class="maintitle">
+    <h1>問い合わせ</h1>
+  </div>
+  <div class="subtitle">
+    <h3>意見・要望やシステムの改善点があればご連絡ください</h3>
+  </div>
+  <form>
+    <div class="form-group">
+      <div class="send-form">
+        <textarea name="body" class="form-control" style="font-size:20px"></textarea>
+      </div>
+      <div class="form-group">
+        <!-- 送信ボタン -->
+        <button type="submit" class="btn btn-default sousin">送信</button>
+      <% end %>
+    </div>
+  </div>
+</form>
 </div>

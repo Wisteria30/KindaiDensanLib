@@ -20,10 +20,10 @@
           <li><%= link_to current_user.email, "/#{current_user.id}/user" %></li>
           <li><%= link_to "ログアウト", destroy_user_session_path, method:"delete" %></li>
           <li><%= link_to "購入希望", "/wantBook" %></li>
+          <li><%= link_to "問い合わせ", "/inquiry" %></li>
         <% else %>
           <li><%= link_to "ログイン", new_user_session_path %></li>
         <% end %>
-        <li><%= link_to "問い合わせ", "/inquiry" %></li>
         <li><%= link_to "ヘルプ", "/help" %></li>
       </ul>
     </header>
