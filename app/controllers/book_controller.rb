@@ -1,4 +1,8 @@
 class BookController < ApplicationController
+  before_action :authenticate_user!, only: [:notice, :detail, :show, :wantBook, :inquiry, :user]
+
+  before_action :admin_user, {only: [:notice, :detail]}
+
   def index
     @books = Book.all
     @notices = Notice.where(read: false)
@@ -53,7 +57,7 @@ class BookController < ApplicationController
   end
 
   def url
-      @type = "購入申請"
+      type = "購入申請"
       @notice = Notice.new(
         title: @type,
         body: params[:amazonurl],
@@ -71,7 +75,7 @@ class BookController < ApplicationController
   end
 
   def demand
-    @type = "問い合わせ"
+    type = "問い合わせ"
     @notice = Notice.new(
       title: @type,
       body: params[:body],
@@ -100,4 +104,17 @@ class BookController < ApplicationController
       render("#{@current_user.id}")
     end
   end
+
+  def admin_user
+    if user_signed_in?
+      if !current_user.admin_flg
+        flash[:notice] = "権限がありません"
+        redirect_to "/"
+      end
+    else
+      flash[:notice] = "ログインしてください"
+      redirect_to "/"
+    end
+  end
+
 end
