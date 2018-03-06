@@ -7,7 +7,7 @@ class BookController < ApplicationController
 
 
   #-----------------ページわけの値-----------------#
-  PER = 10
+  PER = 20
 
 
   #-----------------ホーム-----------------#
