@@ -46,13 +46,15 @@ class BookController < ApplicationController
 
   #-----------------本関連-----------------#
   def show
-    if @book = Book.find_by(id: params[:id]) === nil
+    if @book = Book.find_by(id: params[:id]) != nil
+      @book = Book.find_by(id: params[:id])
       begin
         @books = Book.where(rental_user: current_user.email)
       rescue => e
         flash[:notice] ="ログインしてください"
         redirect_to("/")
       end
+    else
       redirect_to("/")
     end
   end
