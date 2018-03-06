@@ -15,6 +15,7 @@
       </p>
     </div>
   </div>
+  <% if user_signed_in? %>
   <% if current_user.admin_flg %>
   <div class="subtitle">
     <h2>管理者側の使い方</h2>
@@ -31,5 +32,6 @@
     </p>
   </div>
   </div>
+  <% end %>
   <% end %>
 </div>
