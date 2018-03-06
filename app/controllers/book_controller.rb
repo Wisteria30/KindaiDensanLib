@@ -37,10 +37,10 @@ class BookController < ApplicationController
   #-----------------検索-----------------#
   def search
     search = params[:search]
-    @books = Book.where("title like '%"+ search + "%' ").or(
-    Book.where("author like '%"+ search + "%' ")).or(
-    Book.where("publisher like '%"+ search + "%' ")).or(
-    Book.where("genre like '%"+ search + "%' "))
+    @books = Book.where("UPPER(title) = ?", search.upcase).or(
+    Book.where("UPPER(author) = ?", search.upcase)).or(
+    Book.where("UPPER(publisher) = ?", search.upcase)).or(
+    Book.where("UPPER(genre) = ?", search.upcase))
   end
 
 
