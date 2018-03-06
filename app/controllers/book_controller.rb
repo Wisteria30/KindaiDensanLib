@@ -59,7 +59,7 @@ class BookController < ApplicationController
   def url
       type = "購入申請"
       @notice = Notice.new(
-        title: @type,
+        title: type,
         body: params[:amazonurl],
         sender: current_user.id,
         read: false
@@ -77,7 +77,7 @@ class BookController < ApplicationController
   def demand
     type = "問い合わせ"
     @notice = Notice.new(
-      title: @type,
+      title: type,
       body: params[:body],
       sender: current_user.id,
       read: false
