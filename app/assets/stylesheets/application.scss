@@ -233,6 +233,18 @@ input {
   font-size: 20px;
 }
 
+/* ヘルプ ================================ */
+.help-body {
+  padding: 20px 0;
+}
+
+.help-body p {
+  font-size: 23px;
+  width: 500px;
+  word-break: keep-all;
+}
+
+
 /* フラッシュ ================================ */
 .flash {
   padding: 10px 0;
