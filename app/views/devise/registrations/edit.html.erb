@@ -1,12 +1,14 @@
 <div class="container">
-<h2>パスワードの変更</h2>
+  <div class="maintitle">
+    <h1>パスワードの変更</h1>
+  </div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :アカウント名 %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <span class="login-span"><%= f.label :アカウント名 %></span><br />
+    <div class="login-box"><%= f.email_field :email, autofocus: true, autocomplete: "email" %></div>
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
@@ -14,27 +16,27 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :新しいパスワード %> <i>(変更したくなければ、空白のまま)</i><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    <span class="login-span"><%= f.label :新しいパスワード %> <i>(変更したくなければ、空白のまま)</i></span><br />
+    <div class="login-box"><%= f.password_field :password, autocomplete: "off" %></div>
     <% if @minimum_password_length %>
       <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
+      <span class="login-span"><em><%= @minimum_password_length %> 文字以上にしてください</em></span>
     <% end %>
   </div>
 
   <div class="field">
-    <%= f.label :パスワードの確認 %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    <span class="login-span"><%= f.label :パスワードの確認 %></span><br />
+    <div class="login-box"><%= f.password_field :password_confirmation, autocomplete: "off" %></div>
   </div>
 
   <div class="field">
-    <%= f.label :今までのパスワード %><br />
-    <%= f.password_field :current_password, autocomplete: "off" %>
+    <span class="login-span"><%= f.label :今までのパスワード %></span><br />
+    <div class="login-box"><%= f.password_field :current_password, autocomplete: "off" %></div>
   </div>
 
   <div class="actions">
-    <%= f.submit "更新" %>
+    <div class="login-box"><%= f.submit "更新" %></div>
   </div>
 <% end %>
-<%= link_to "戻る", :back %>
+<span class="login-span"><%= link_to "戻る", :back %></span>
 </div>
