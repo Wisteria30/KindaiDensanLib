@@ -65696,3 +65696,2750 @@ Processing by BookController#index as HTML
 Completed 200 OK in 120ms (Views: 110.7ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-05 21:47:52 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 1712ms (Views: 1680.0ms | ActiveRecord: 2.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-05 21:47:59 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jwYHAoctTfr3mc1lZk2JshkH92TL9Bh1igPbnyJu2CFMHb3T/wV1jEYdcv4FWNOfya9cH1hOSxIT0O1siW6kqw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 77ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-05 21:47:59 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 134ms (Views: 130.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/notice" for 127.0.0.1 at 2018-03-05 21:48:10 +0900
+Processing by BookController#notice as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-05 21:48:10 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 161ms (Views: 155.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-05 21:49:48 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 203ms (Views: 195.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-05 22:06:41 +0900
+  
+SyntaxError (/Users/wisteria30/Rails/DensanLib/app/controllers/book_controller.rb:5: syntax error, unexpected ':', expecting keyword_end
+  before_action : admin_user:, only: [:notice, 
+                 ^):
+  
+app/controllers/book_controller.rb:5: syntax error, unexpected ':', expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-03-05 22:09:09 +0900
+  
+SyntaxError (/Users/wisteria30/Rails/DensanLib/app/controllers/book_controller.rb:5: syntax error, unexpected ':', expecting keyword_end
+  before_action : admin_user:, {only: [:notice,
+                 ^):
+  
+app/controllers/book_controller.rb:5: syntax error, unexpected ':', expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-03-05 22:09:36 +0900
+  
+SyntaxError (/Users/wisteria30/Rails/DensanLib/app/controllers/book_controller.rb:4: syntax error, unexpected ':', expecting keyword_end
+  before_action : admin_user:, {only: [:notice,
+                 ^):
+  
+app/controllers/book_controller.rb:4: syntax error, unexpected ':', expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-03-05 22:09:59 +0900
+  
+SyntaxError (/Users/wisteria30/Rails/DensanLib/app/controllers/book_controller.rb:4: syntax error, unexpected ':', expecting keyword_end
+  before_action : admin_user, {only: [:notice, 
+                 ^
+/Users/wisteria30/Rails/DensanLib/app/controllers/book_controller.rb:4: syntax error, unexpected '\n', expecting &. or :: or '[' or '.'):
+  
+app/controllers/book_controller.rb:4: syntax error, unexpected ':', expecting keyword_end
+app/controllers/book_controller.rb:4: syntax error, unexpected '\n', expecting &. or :: or '[' or '.'
+Started GET "/" for 127.0.0.1 at 2018-03-05 22:10:16 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (1.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 146ms (Views: 122.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/notice" for 127.0.0.1 at 2018-03-05 22:10:30 +0900
+Processing by BookController#notice as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-05 22:10:30 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 119ms (Views: 103.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-05 22:10:38 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fzqy8yRjmlQqhuPU1NbhQLSxb+xxRCgLv6Aew6FkTnO0XFJyKQqdb8QO4vvJVvzFOdvsg5J632HEDjN7zB2uVA==", "user"=>{"email"=>"fa@fa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "fa@fa"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 165ms (ActiveRecord: 1.6ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fzqy8yRjmlQqhuPU1NbhQLSxb+xxRCgLv6Aew6FkTnO0XFJyKQqdb8QO4vvJVvzFOdvsg5J632HEDjN7zB2uVA==", "user"=>{"email"=>"fa@fa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 260ms (Views: 94.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-05 22:10:44 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k7HrXYcpcv0YAUEOqdVhNTdF1jsm0MjulxYC0kVrj0VY1wvcikB1xvaJQCG0VXywui9VVMXuP4TsuC9qKBJvYg==", "user"=>{"email"=>"fa@fa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "fa@fa"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-03-05 13:10:44.796619"], ["last_sign_in_at", "2018-03-05 10:58:43.306665"], ["sign_in_count", 27], ["updated_at", "2018-03-05 13:10:44.797972"], ["id", 1]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/notice
+Completed 302 Found in 202ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/notice" for 127.0.0.1 at 2018-03-05 22:10:44 +0900
+Processing by BookController#notice as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/notice.html.erb within layouts/application
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mNotice Load (0.2ms)[0m  [1m[34mSELECT "notices".* FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  Rendered book/notice.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 98ms (Views: 91.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/1/user" for 127.0.0.1 at 2018-03-05 22:10:48 +0900
+Processing by BookController#user as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/user.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  Rendered book/user.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 118ms (Views: 109.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2018-03-05 22:10:49 +0900
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices"[0m
+  [1m[36mNotice Load (0.1ms)[0m  [1m[34mSELECT  "notices".* FROM "notices" ORDER BY "notices"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (44.6ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (7.7ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (20.0ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (5.3ms)
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (7.5ms)
+Completed 200 OK in 2184ms (Views: 1016.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2018-03-05 22:10:51 +0900
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices"[0m
+  [1m[36mNotice Load (0.2ms)[0m  [1m[34mSELECT  "notices".* FROM "notices" ORDER BY "notices"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (37.4ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.9ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (14.7ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.0ms)
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (4.4ms)
+Completed 200 OK in 263ms (Views: 248.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/user/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-03-05 22:10:56 +0900
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (2.9ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (6.2ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (0.5ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (8.9ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (0.6ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (0.5ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (2.9ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (10.2ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (111.6ms)
+Completed 200 OK in 170ms (Views: 144.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/admin/user/new" for 127.0.0.1 at 2018-03-05 22:11:08 +0900
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dWhWLvyhmlFCqebq1YK2LTXBY3uLjnHVy+WFe4QS8ulWMfBY+VScdJjx4Od8lnZVGYrCdlL7p/WiU06yGdEk5Q==", "user"=>{"email"=>"af@af", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]", "remember_created_at"=>"", "sign_in_count"=>"0", "current_sign_in_at"=>"", "last_sign_in_at"=>"", "current_sign_in_ip"=>"", "last_sign_in_ip"=>"", "admin_flg"=>"0"}, "return_to"=>"http://localhost:3000/admin", "_save"=>"", "model_name"=>"user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "af@af"], ["LIMIT", 1]]
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at", "admin_flg") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "af@af"], ["encrypted_password", "$2a$11$5lgvkoxuKfLlE6TPuV.VsuboySt9OegiUL4KKdtb0H/0gqmLCQjdm"], ["current_sign_in_ip", ""], ["last_sign_in_ip", ""], ["created_at", "2018-03-05 13:11:09.163814"], ["updated_at", "2018-03-05 13:11:09.163814"], ["admin_flg", "f"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 198ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2018-03-05 22:11:09 +0900
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices"[0m
+  [1m[36mNotice Load (0.1ms)[0m  [1m[34mSELECT  "notices".* FROM "notices" ORDER BY "notices"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (25.5ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.4ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (13.3ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.9ms)
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (5.6ms)
+Completed 200 OK in 236ms (Views: 226.1ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-05 22:11:13 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2wVCaIZwA3hajHT497Fou203Kw3Wq4oCzBFdM3oH39LNg02r7oiHCVh7pHCLwsaFa/5o3Ihddz0ZdUDPr9Ej+w=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-05 22:11:13 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 113ms (Views: 109.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-05 22:11:14 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 111ms (Views: 109.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-05 22:11:22 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KIc4TDBqTfMnjOI6YdD4Z4P41KbkLz3/fXC+Oa5ILU6KzxMcXuPMvpNiBF5VP7KToocfUDRtdvT5YjNYo1Ilww==", "user"=>{"email"=>"af@af", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "af@af"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-03-05 13:11:22.391676"], ["last_sign_in_at", "2018-03-05 13:11:22.391676"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2018-03-05 13:11:22.392443"], ["id", 4]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 197ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-05 22:11:22 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 104ms (Views: 101.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/1" for 127.0.0.1 at 2018-03-05 22:11:29 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/show.html.erb within layouts/application
+  Rendered book/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 102ms (Views: 93.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/4" for 127.0.0.1 at 2018-03-05 22:11:34 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering book/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "af@af"]]
+  Rendered book/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 92ms (Views: 88.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/notice" for 127.0.0.1 at 2018-03-05 22:11:39 +0900
+Processing by BookController#notice as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :admin_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-05 22:11:39 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 90ms (Views: 87.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/inquiry" for 127.0.0.1 at 2018-03-05 22:30:18 +0900
+Processing by BookController#inquiry as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering book/inquiry.html.erb within layouts/application
+  Rendered book/inquiry.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 283ms (Views: 260.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/demand" for 127.0.0.1 at 2018-03-05 22:30:24 +0900
+Processing by BookController#demand as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dyeOCBT3iMIaQy/b57s0OAS6km4gk8ybSz8A0dFOrSL9Hbpq2c5/NbR54Za0DUxZejxK0hnTy1MpU8E+N5tDjQ==", "body"=>"あdsfじゃsフォイアshフォイアw；jfピアwj"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "notices" ("body", "sender", "read", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "あdsfじゃsフォイアshフォイアw；jfピアwj"], ["sender", 4], ["read", "f"], ["created_at", "2018-03-05 13:30:24.452312"], ["updated_at", "2018-03-05 13:30:24.452312"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-05 22:30:24 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 108ms (Views: 103.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-05 22:30:26 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q6KTI9q9lvnu+SNZ48CsT6Ox8iiTdmfaydTMQgRrhTHsWNk2lMIbkdhznJswIqSt6yTF/N4ahKhZAJ/XTRFXVQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-05 22:30:26 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 87ms (Views: 84.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-05 22:30:28 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 106ms (Views: 104.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-05 22:30:36 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dzhnePgnspywSJhkYj7hZPv9ShhbkgezuujwtQPywQareS2wZJorsJKIMY5tlBMRCrmsY2DJaUVOCD7aBUzW6w==", "user"=>{"email"=>"skymars0327@yahoo.co.jp", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "skymars0327@yahoo.co.jp"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-03-05 13:30:36.422646"], ["last_sign_in_at", "2018-03-05 10:58:10.355818"], ["sign_in_count", 6], ["updated_at", "2018-03-05 13:30:36.423600"], ["id", 2]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 197ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-05 22:30:36 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 92ms (Views: 89.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/inquiry" for 127.0.0.1 at 2018-03-05 22:30:40 +0900
+Processing by BookController#inquiry as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering book/inquiry.html.erb within layouts/application
+  Rendered book/inquiry.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 111ms (Views: 107.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/demand" for 127.0.0.1 at 2018-03-05 22:30:48 +0900
+Processing by BookController#demand as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5uj+uHcCbn9wg6Wiv7D105Gf2dnacBUJIF5yYpZQO/Ro5W00WpY4pFo78lB80ixXGXgLM+eM3rt2frZqCPBzpA==", "body"=>"サンプルe"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "notices" ("body", "sender", "read", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["body", "サンプルe"], ["sender", 2], ["read", "f"], ["created_at", "2018-03-05 13:30:48.182190"], ["updated_at", "2018-03-05 13:30:48.182190"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-05 22:30:48 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 112ms (Views: 107.5ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-05 22:30:50 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eUEOh3wIar2lHV0zWb5HeM7mHxbLTbgqjBGblKaokthHViHXXpUK1dmP1CC68rAMCBykXvCGPVZXJEM+ylqp6g=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-05 22:30:50 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 91ms (Views: 87.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-05 22:30:51 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 112ms (Views: 111.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-05 22:30:53 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"722EXA/MwVOlF/uQ1faaS4B1MWf4ylu8vNRvBUbNQkl7NhK7YuNA5NcUTFUvy6BQrmY9xfdI1i5oHR6HBfcJlA==", "user"=>{"email"=>"fa@fa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "fa@fa"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-03-05 13:30:53.726711"], ["last_sign_in_at", "2018-03-05 13:10:44.796619"], ["sign_in_count", 28], ["updated_at", "2018-03-05 13:30:53.727768"], ["id", 1]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 184ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-05 22:30:53 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 94ms (Views: 91.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/notice" for 127.0.0.1 at 2018-03-05 22:30:55 +0900
+Processing by BookController#notice as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/notice.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mNotice Load (0.2ms)[0m  [1m[34mSELECT "notices".* FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered book/notice.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 126ms (Views: 116.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/notice" for 127.0.0.1 at 2018-03-06 17:36:23 +0900
+Processing by BookController#notice as HTML
+  [1m[36mUser Load (8.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/notice.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mNotice Load (0.8ms)[0m  [1m[34mSELECT "notices".* FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered book/notice.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 592ms (Views: 544.9ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/notice" for 127.0.0.1 at 2018-03-06 17:37:50 +0900
+Processing by BookController#notice as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/notice.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mNotice Load (0.2ms)[0m  [1m[34mSELECT "notices".* FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered book/notice.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 178ms (Views: 121.0ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/wantBook" for 127.0.0.1 at 2018-03-06 17:37:53 +0900
+Processing by BookController#wantBook as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/wantBook.html.erb within layouts/application
+  Rendered book/wantBook.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 146ms (Views: 118.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/url" for 127.0.0.1 at 2018-03-06 17:37:58 +0900
+Processing by BookController#url as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lPrgPlcx2YGJV/ySwox/X+ksaGNVdiL8TOuxFF/jYzu9eDUWviUMFWufiB7Z7Ne31nhmm66mxENrleFPXj+3Ag==", "amazonurl"=>"https://amazon/books/lib"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "notices" ("title", "body", "sender", "read", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "購入申請"], ["body", "https://amazon/books/lib"], ["sender", 1], ["read", "f"], ["created_at", "2018-03-06 08:37:58.225616"], ["updated_at", "2018-03-06 08:37:58.225616"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 17:37:58 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 174ms (Views: 157.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/notice" for 127.0.0.1 at 2018-03-06 17:38:00 +0900
+Processing by BookController#notice as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/notice.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mNotice Load (0.2ms)[0m  [1m[34mSELECT "notices".* FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/notice.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 113ms (Views: 106.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/notice" for 127.0.0.1 at 2018-03-06 18:01:59 +0900
+Processing by BookController#notice as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/notice.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mNotice Load (0.2ms)[0m  [1m[34mSELECT "notices".* FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/notice.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 134ms (Views: 129.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:02:01 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 90ms (Views: 87.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:02:32 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 102ms (Views: 100.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:03:02 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 108ms (Views: 105.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:13:57 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 87ms (Views: 85.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:16:55 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 3114ms (Views: 3111.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:17:16 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 2083ms (Views: 2080.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:17:46 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 102ms (Views: 100.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:17:57 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 111ms (Views: 108.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:18:09 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 116ms (Views: 114.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:19:32 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 162ms (Views: 158.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:20:17 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 92ms (Views: 89.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 18:22:13 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 138ms (Views: 131.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/1" for 127.0.0.1 at 2018-03-06 18:22:19 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/show.html.erb within layouts/application
+  Rendered book/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 106ms (Views: 97.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 18:22:22 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 126ms (Views: 122.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:25:08 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 124ms (Views: 120.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:25:22 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 89ms (Views: 87.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:26:11 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 90ms (Views: 88.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:27:24 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 92ms (Views: 89.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:28:16 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 91ms (Views: 88.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:28:32 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 115ms (Views: 112.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:29:26 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 88ms (Views: 85.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:29:50 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 88ms (Views: 86.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:30:48 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 2058ms (Views: 2056.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:31:26 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 112ms (Views: 110.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:31:59 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 80ms (Views: 78.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wantBook" for 127.0.0.1 at 2018-03-06 18:32:10 +0900
+Processing by BookController#wantBook as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/wantBook.html.erb within layouts/application
+  Rendered book/wantBook.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 128ms (Views: 121.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/inquiry" for 127.0.0.1 at 2018-03-06 18:32:13 +0900
+Processing by BookController#inquiry as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/inquiry.html.erb within layouts/application
+  Rendered book/inquiry.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 125ms (Views: 118.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:32:14 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 114ms (Views: 105.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:33:05 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 2222ms (Views: 2220.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/1/user" for 127.0.0.1 at 2018-03-06 18:35:49 +0900
+Processing by BookController#user as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/user.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  Rendered book/user.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 115ms (Views: 106.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/2" for 127.0.0.1 at 2018-03-06 18:35:55 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering book/show.html.erb within layouts/application
+  Rendered book/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 102ms (Views: 94.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/2/return" for 127.0.0.1 at 2018-03-06 18:35:59 +0900
+Processing by BookController#return as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wICXctIxERlaUZHhaMrOXuyRSOHxsXyxv86Ys+F+SKr/jxpL6K6rD23nWrdcblogTd/X97+aUMm9u0SHJK5Uug==", "id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[33mUPDATE "books" SET "status" = ?, "rental_user" = ?, "updated_at" = ? WHERE "books"."id" = ?[0m  [["status", "t"], ["rental_user", nil], ["updated_at", "2018-03-06 09:35:59.367537"], ["id", 2]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/1/user
+Completed 302 Found in 10ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/1/user" for 127.0.0.1 at 2018-03-06 18:35:59 +0900
+Processing by BookController#user as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/user.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  Rendered book/user.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 117ms (Views: 112.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 18:36:06 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 109ms (Views: 104.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/1/user" for 127.0.0.1 at 2018-03-06 18:36:08 +0900
+Processing by BookController#user as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/user.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  Rendered book/user.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 112ms (Views: 104.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:36:11 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 91ms (Views: 88.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:39:21 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 117ms (Views: 114.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:40:00 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 96ms (Views: 94.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:40:09 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 99ms (Views: 97.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:40:29 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 2203ms (Views: 2200.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:40:49 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 2201ms (Views: 2198.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:40:58 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 2253ms (Views: 2250.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:41:08 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 109ms (Views: 105.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:42:58 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 103ms (Views: 101.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:44:23 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 2186ms (Views: 2184.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:44:40 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 2220ms (Views: 2216.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:44:46 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 79ms (Views: 76.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:45:01 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 107ms (Views: 105.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:45:46 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 95ms (Views: 93.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:45:56 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 95ms (Views: 92.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-06 18:46:46 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tIkxKgFQYSA8BsaMp8PVMWd5Lu3d8EZi8Br6GdptXB+c3SRi1uDY3CZCt2vgxAaW08dXgJWs5xekNS/SECf+JA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 18:46:46 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 89ms (Views: 86.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-06 18:46:50 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 113ms (Views: 112.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-06 18:47:01 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hDnp8TuTLJWkbM6YP8gktM23rViszXFNkrDcbJB0NYvHIoso7a9dZFTAAm1ZY5xq+6eaBAC54IefB1y3Kts7Jw==", "user"=>{"email"=>"skymars0327@yahoo.co.jp", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "skymars0327@yahoo.co.jp"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-03-06 09:47:01.287230"], ["last_sign_in_at", "2018-03-05 13:30:36.422646"], ["sign_in_count", 7], ["updated_at", "2018-03-06 09:47:01.288600"], ["id", 2]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 179ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 18:47:01 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 100ms (Views: 96.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 18:47:03 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 93ms (Views: 89.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/2/user" for 127.0.0.1 at 2018-03-06 18:47:23 +0900
+Processing by BookController#user as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering book/user.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "skymars0327@yahoo.co.jp"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "skymars0327@yahoo.co.jp"]]
+  Rendered book/user.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 132ms (Views: 125.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-06 18:47:26 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 111ms (Views: 107.4ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-06 18:47:32 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rIImAFCgvyM8ZaTSslTDymDaR3nPby12ggIeSXQLrAY+c4XTOc2Rsx7vBNaVOAmF7qCW6LLwUeXBzxYoNxO/YQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 18:47:32 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 101ms (Views: 98.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-06 18:47:33 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 116ms (Views: 114.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-06 18:47:37 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 108ms (Views: 107.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-06 18:47:38 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 127ms (Views: 124.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 18:47:39 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 140ms (Views: 137.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-06 18:48:20 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 154ms (Views: 153.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-06 18:48:26 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5u7gNnP6ParebkPWFfgb249qGDpW2CwEm3rs2YlwkyFmtp5IYsDRrG4kV2mU4rF/XVKLindxVxC3tfJZz3R6OA==", "user"=>{"email"=>"fa@fa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "fa@fa"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-03-06 09:48:26.984119"], ["last_sign_in_at", "2018-03-05 13:30:53.726711"], ["sign_in_count", 29], ["updated_at", "2018-03-06 09:48:26.984930"], ["id", 1]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 189ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 18:48:27 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 97ms (Views: 94.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/1/user" for 127.0.0.1 at 2018-03-06 18:48:30 +0900
+Processing by BookController#user as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/user.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  Rendered book/user.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 109ms (Views: 100.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-06 18:48:31 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 120ms (Views: 116.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 18:48:40 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 131ms (Views: 128.1ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-06 18:48:47 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3YPVqKya6CpnUOw2atRmtZ2w5M3Imp9JqVNdT//V04zKuBbZn1Y50Pk0hngN9dZ+P3VCyFy2bI3uPMs1zibSXg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 18:48:47 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 91ms (Views: 88.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-06 18:48:49 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 118ms (Views: 116.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-06 18:48:55 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QZ/FuZju+BNj+c/jj3bVcc4MMMNa6Sv4JV+uY+QYofj6tajCRxFptraZ2dI7d8xNYz3vjmlSZiw6/ykVqriyaA==", "user"=>{"email"=>"skymars0327@yahoo.co.jp", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "skymars0327@yahoo.co.jp"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-03-06 09:48:55.426900"], ["last_sign_in_at", "2018-03-06 09:47:01.287230"], ["sign_in_count", 8], ["updated_at", "2018-03-06 09:48:55.427679"], ["id", 2]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 201ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 18:48:55 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 93ms (Views: 90.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-06 18:48:59 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tmX/dLyS1tpDQu6AWCbej/yUruPI5ZU/RBn6gOKqcBncdACPe8VI3BfnUBwfFHF7zTADfl7AcV4zVnxYq7fpmA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 18:48:59 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 100ms (Views: 98.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-06 18:49:00 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 114ms (Views: 112.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-06 18:49:52 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-06 18:49:52 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 95ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-06 18:49:56 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 109ms (Views: 108.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-06 18:50:00 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VHi+aa8oUyc0/PY19oW3C+c2UVoRgGlqYIKbe6hwKuKJgVAJqYYCar+mAyToe0Ic+P5aZoBRENQ48S1Wqdlj1w==", "user"=>{"email"=>"fa@fa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "fa@fa"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-03-06 09:50:01.124735"], ["last_sign_in_at", "2018-03-06 09:48:26.984119"], ["sign_in_count", 30], ["updated_at", "2018-03-06 09:50:01.125586"], ["id", 1]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/edit
+Completed 302 Found in 191ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-06 18:50:01 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 113ms (Views: 110.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-06 18:51:22 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-06 18:53:03 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 102ms (Views: 99.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-06 18:54:07 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 100ms (Views: 97.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-06 18:54:48 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 107ms (Views: 104.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-06 18:55:39 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 96ms (Views: 94.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-06 18:56:40 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 99ms (Views: 97.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-06 18:57:08 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 99ms (Views: 96.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-06 18:57:56 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 107ms (Views: 105.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 19:04:01 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 138ms (Views: 133.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 19:04:24 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 122ms (Views: 117.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:04:26 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 97ms (Views: 93.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:05:01 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 105ms (Views: 103.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:05:32 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 91ms (Views: 89.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 19:06:08 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 140ms (Views: 132.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:06:16 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 100ms (Views: 95.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:08:57 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 104ms (Views: 102.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:09:28 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 113ms (Views: 110.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:14:09 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 92ms (Views: 89.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:14:23 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 92ms (Views: 89.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:16:13 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 95ms (Views: 93.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:16:23 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 102ms (Views: 100.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:16:31 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 95ms (Views: 92.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:17:32 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 91ms (Views: 89.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/1/user" for 127.0.0.1 at 2018-03-06 19:18:11 +0900
+Processing by BookController#user as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/user.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  Rendered book/user.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 125ms (Views: 120.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2018-03-06 19:18:16 +0900
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices"[0m
+  [1m[36mNotice Load (0.2ms)[0m  [1m[34mSELECT  "notices".* FROM "notices" ORDER BY "notices"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (30.5ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (11.0ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (21.2ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.9ms)
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (5.1ms)
+Completed 200 OK in 348ms (Views: 334.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2018-03-06 19:18:16 +0900
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices"[0m
+  [1m[36mNotice Load (0.2ms)[0m  [1m[34mSELECT  "notices".* FROM "notices" ORDER BY "notices"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (24.6ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.4ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (16.4ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (5.6ms)
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (5.1ms)
+Completed 200 OK in 268ms (Views: 253.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/1/user" for 127.0.0.1 at 2018-03-06 19:19:11 +0900
+Processing by BookController#user as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/user.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  Rendered book/user.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 103ms (Views: 99.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2018-03-06 19:19:50 +0900
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices"[0m
+  [1m[36mNotice Load (0.3ms)[0m  [1m[34mSELECT  "notices".* FROM "notices" ORDER BY "notices"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (25.1ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.8ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (29.6ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.6ms)
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (9.2ms)
+Completed 200 OK in 289ms (Views: 274.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2018-03-06 19:19:51 +0900
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices"[0m
+  [1m[36mNotice Load (0.1ms)[0m  [1m[34mSELECT  "notices".* FROM "notices" ORDER BY "notices"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (18.5ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (6.7ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (15.4ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.8ms)
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (5.2ms)
+Completed 200 OK in 243ms (Views: 232.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:20:57 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 104ms (Views: 101.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:21:20 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 102ms (Views: 99.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:22:03 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 93ms (Views: 91.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:22:24 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 91ms (Views: 89.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:23:50 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 114ms (Views: 112.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:24:19 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 91ms (Views: 88.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:26:04 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 2254ms (Views: 2251.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:26:19 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 2174ms (Views: 2171.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:26:43 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 2230ms (Views: 2228.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2018-03-06 19:28:38 +0900
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices"[0m
+  [1m[36mNotice Load (0.2ms)[0m  [1m[34mSELECT  "notices".* FROM "notices" ORDER BY "notices"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (28.5ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (6.4ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (15.3ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.2ms)
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (5.6ms)
+Completed 200 OK in 244ms (Views: 232.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/book/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-03-06 19:28:44 +0900
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"book"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (1.9ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (3.1ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (10.0ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (74.6ms)
+Completed 200 OK in 132ms (Views: 105.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-03-06 19:31:03 +0900
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY users.id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (87.4ms)
+Completed 200 OK in 146ms (Views: 121.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/user/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-03-06 19:31:06 +0900
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (1.8ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (3.0ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (0.4ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (0.6ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_datetime.html.haml (0.5ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_boolean.html.haml (2.6ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (8.9ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (72.1ms)
+Completed 200 OK in 119ms (Views: 94.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2018-03-06 19:34:25 +0900
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices"[0m
+  [1m[36mNotice Load (0.2ms)[0m  [1m[34mSELECT  "notices".* FROM "notices" ORDER BY "notices"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (22.7ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (6.2ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (19.2ms)
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.9ms)
+  Rendering /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/wisteria30/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (7.7ms)
+Completed 200 OK in 289ms (Views: 276.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:34:28 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 100ms (Views: 97.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:34:57 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 96ms (Views: 93.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:35:59 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 102ms (Views: 99.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 19:36:26 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 129ms (Views: 123.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:36:30 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 106ms (Views: 100.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:37:58 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 100ms (Views: 97.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:38:38 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 2179ms (Views: 2176.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:38:43 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 80ms (Views: 78.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:38:45 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 107ms (Views: 105.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:39:04 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 2185ms (Views: 2183.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 19:39:19 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 2191ms (Views: 2188.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 20:31:54 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 151ms (Views: 138.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 20:31:57 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 105ms (Views: 102.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2018-03-06 20:35:46 +0900
+Processing by BookController#help as HTML
+  Rendering book/help.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered book/help.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 100ms (Views: 97.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 20:44:59 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 144ms (Views: 133.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 20:53:46 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  Rendered book/index.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 132ms (Views: 120.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 20:54:03 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  Rendered book/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 138ms (Views: 135.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 20:54:58 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  Rendered book/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 140ms (Views: 131.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 20:57:58 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  Rendered book/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 119ms (Views: 114.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 20:58:14 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  Rendered book/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 106ms (Views: 102.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/1" for 127.0.0.1 at 2018-03-06 21:00:04 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/show.html.erb within layouts/application
+  Rendered book/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 144ms (Views: 130.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:00:06 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  Rendered book/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 147ms (Views: 135.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/8" for 127.0.0.1 at 2018-03-06 21:00:08 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering book/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  Rendered book/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 109ms (Views: 101.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/8/rental" for 127.0.0.1 at 2018-03-06 21:00:13 +0900
+Processing by BookController#rental as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GX73CT14MWkbbp3s18EqEngokRCFgkYREsAPdvU2OslmhNvcefIEvG0Li1z9zGNe3flZX4EfUvCK4k8cWcj/rA==", "id"=>"8"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "books" SET "status" = ?, "rental_user" = ?, "updated_at" = ? WHERE "books"."id" = ?[0m  [["status", "f"], ["rental_user", "fa@fa"], ["updated_at", "2018-03-06 12:00:13.080969"], ["id", 8]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:00:13 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  Rendered book/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 102ms (Views: 97.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/2" for 127.0.0.1 at 2018-03-06 21:00:14 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering book/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  Rendered book/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 131ms (Views: 123.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/2/rental" for 127.0.0.1 at 2018-03-06 21:00:15 +0900
+Processing by BookController#rental as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hdyIZYPGNVEERK5UQ3HMMhQejhLM6zWiASqBF9ScDQtbgSa/nX6FHuQkyR+XSUoI9VlFC/Jy/1PGH4gZ2awTow==", "id"=>"2"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "books" SET "status" = ?, "rental_user" = ?, "updated_at" = ? WHERE "books"."id" = ?[0m  [["status", "f"], ["rental_user", "fa@fa"], ["updated_at", "2018-03-06 12:00:15.815595"], ["id", 2]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:00:15 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  Rendered book/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 106ms (Views: 99.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/4" for 127.0.0.1 at 2018-03-06 21:00:17 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering book/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  Rendered book/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 114ms (Views: 106.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/4/rental" for 127.0.0.1 at 2018-03-06 21:00:18 +0900
+Processing by BookController#rental as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9JFENnzd9b1HEtIQLq2WjjrR53y1KH1U+3r91t1OhwGz5M5QWJVVllY+WZtsTLx7IktmmQh8grVbwqXjUqf7Nw==", "id"=>"4"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "books" SET "status" = ?, "rental_user" = ?, "updated_at" = ? WHERE "books"."id" = ?[0m  [["status", "f"], ["rental_user", "fa@fa"], ["updated_at", "2018-03-06 12:00:18.381182"], ["id", 4]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:00:18 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  Rendered book/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 109ms (Views: 106.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/1" for 127.0.0.1 at 2018-03-06 21:00:20 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (1.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/show.html.erb within layouts/application
+  Rendered book/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 117ms (Views: 110.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:00:22 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  Rendered book/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 133ms (Views: 129.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/11" for 127.0.0.1 at 2018-03-06 21:00:24 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering book/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  Rendered book/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 117ms (Views: 108.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:00:34 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  Rendered book/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 130ms (Views: 123.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:03:54 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  Rendered book/index.html.erb within layouts/application (42.4ms)
+Completed 200 OK in 140ms (Views: 129.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:05:21 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (81.4ms)
+Completed 200 OK in 173ms (Views: 168.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:10:25 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (134.4ms)
+Completed 200 OK in 1714ms (Views: 1696.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2018-03-06 21:10:34 +0900
+Processing by BookController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 3]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (45.2ms)
+Completed 200 OK in 180ms (Views: 173.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/?page=3" for 127.0.0.1 at 2018-03-06 21:10:40 +0900
+Processing by BookController#index as HTML
+  Parameters: {"page"=>"3"}
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 6]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (48.4ms)
+Completed 200 OK in 184ms (Views: 179.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/?page=4" for 127.0.0.1 at 2018-03-06 21:10:42 +0900
+Processing by BookController#index as HTML
+  Parameters: {"page"=>"4"}
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 9]]
+  Rendered book/index.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 153ms (Views: 144.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/?page=3" for 127.0.0.1 at 2018-03-06 21:10:46 +0900
+Processing by BookController#index as HTML
+  Parameters: {"page"=>"3"}
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 6]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (50.5ms)
+Completed 200 OK in 163ms (Views: 158.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:10:47 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (49.5ms)
+Completed 200 OK in 167ms (Views: 159.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2018-03-06 21:10:47 +0900
+Processing by BookController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 3]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (50.4ms)
+Completed 200 OK in 167ms (Views: 162.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:10:48 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 152ms (Views: 146.2ms | ActiveRecord: 1.2ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:17:14 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (80.4ms)
+Completed 200 OK in 1061ms (Views: 1043.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:26:42 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (79.2ms)
+Completed 200 OK in 1027ms (Views: 1007.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:26:45 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 142ms (Views: 138.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:26:51 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 228ms (Views: 223.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:31:39 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (82.1ms)
+Completed 200 OK in 1032ms (Views: 1015.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:31:43 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 160ms (Views: 156.1ms | ActiveRecord: 0.8ms)
+
+
+translating activerecord.models.book ...
+translating activerecord.models.user ...
+translating activerecord.models.notice ...
+translating activerecord.attributes.notice.read ...
+translating activerecord.attributes.user.encrypted_password ...
+translating activerecord.attributes.user.reset_password_token ...
+translating activerecord.attributes.user.reset_password_sent_at ...
+translating activerecord.attributes.user.remember_created_at ...
+translating activerecord.attributes.user.current_sign_in_at ...
+translating activerecord.attributes.user.last_sign_in_at ...
+translating activerecord.attributes.user.current_sign_in_ip ...
+translating activerecord.attributes.user.last_sign_in_ip ...
+translating activerecord.attributes.user.admin_flg ...
+translating activerecord.attributes.book.title ...
+translating activerecord.attributes.book.author ...
+translating activerecord.attributes.book.publisher ...
+translating activerecord.attributes.book.publish_date ...
+translating activerecord.attributes.book.genre ...
+translating activerecord.attributes.book.isbn ...
+translating activerecord.attributes.book.status ...
+translating activerecord.attributes.book.rental_user ...
+translating activerecord.attributes.notice.title ...
+translating activerecord.attributes.notice.body ...
+translating activerecord.attributes.notice.sender ...
+translating activerecord.attributes.user.email ...
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:35:04 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (88.2ms)
+Completed 200 OK in 1081ms (Views: 1063.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/1" for 127.0.0.1 at 2018-03-06 21:35:15 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/show.html.erb within layouts/application
+  Rendered book/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 119ms (Views: 93.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:35:21 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (43.4ms)
+Completed 200 OK in 164ms (Views: 159.4ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-06 21:35:33 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RAFhxab5jKRVkzvCB1hixG6JoL553FKjDlBYy11tkx+94+6w6MwLDrI7HsgVl+nkQjcqTDOiLYCQSG2exxV4mQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:35:33 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 117ms (Views: 113.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:38:06 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (64.3ms)
+Completed 401 Unauthorized in 88ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /Users/wisteria30/Rails/DensanLib/config/locales/translation_ja.yml: #<Psych::SyntaxError: (/Users/wisteria30/Rails/DensanLib/config/locales/translation_ja.yml): did not find expected node content while parsing a block node at line 1 column 1>):
+     9: 
+    10: <% unless current_page.last? -%>
+    11:   <li class="next">
+    12:     <%= link_to raw(t 'views.pagination.next'), url, :remote => remote, :rel => 'next' %>
+    13:   </li>
+    14: <% end -%>
+  
+app/views/book/index.html.erb:41:in `_app_views_book_index_html_erb__418461232256300719_70101387025880'
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:38:27 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (80.8ms)
+Completed 200 OK in 199ms (Views: 185.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:38:30 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 142ms (Views: 138.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-06 21:38:51 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 201ms (Views: 169.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-06 21:38:56 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZhcngDn6ZpwA7lf8UK83Z5GkS5ZAVZwqXyATdRgtX+Mw66FamVsEOg4uTd5HdKrLmzCvd43WHB+GWk290lpGBA==", "user"=>{"email"=>"fa@fa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "fa@fa"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-03-06 12:38:57.162745"], ["last_sign_in_at", "2018-03-06 09:50:01.124735"], ["sign_in_count", 31], ["updated_at", "2018-03-06 12:38:57.163823"], ["id", 1]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 195ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:38:57 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 121ms (Views: 117.9ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-06 21:39:08 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Zzf9Vmf7JCx3xmkpFlzgb8TH0qPDql0MBilNKCb49yhRa+K/VvUpgOHSzRvM/x2atOkd8U5OpNukCYNuNmxcPg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:39:08 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 116ms (Views: 113.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:40:36 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 137ms (Views: 132.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-06 21:40:39 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 126ms (Views: 125.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-06 21:40:42 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fX+iwSeAbckgHBjWrI2av0+Cl4d9mkjEbMKJszTPkEG5dhNGz+EpE9azZUOc8VBfZ/k/skipoJhznu/3TWv7cQ==", "user"=>{"email"=>"fa@fa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "fa@fa"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-03-06 12:40:42.812243"], ["last_sign_in_at", "2018-03-06 12:38:57.162745"], ["sign_in_count", 32], ["updated_at", "2018-03-06 12:40:42.813157"], ["id", 1]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 199ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:40:42 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 128ms (Views: 125.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:49:41 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (76.0ms)
+Completed 200 OK in 183ms (Views: 172.6ms | ActiveRecord: 2.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-06 21:49:44 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CMnbj37r0ghiaFrnV2BQeVWQhyndPa4LDiU8VmIBFksjfZxPAl8nOzmRUOuIGiQyw4O4HGtGZP9fiuuII/UPsg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:49:44 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 118ms (Views: 115.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-06 21:49:46 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 151ms (Views: 150.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-06 21:49:50 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"No7ZIx2m8e1lx/fOYh2wVoR5JHDXmKkav6FQ9mHtiz/7UKB/+cTkfvdwm2qdUuxUNwTkmiv18AQ1Ni1zyVSr+A==", "user"=>{"email"=>"fa@fa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "fa@fa"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-03-06 12:49:50.240681"], ["last_sign_in_at", "2018-03-06 12:40:42.812243"], ["sign_in_count", 33], ["updated_at", "2018-03-06 12:49:50.241702"], ["id", 1]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 195ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:49:50 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 134ms (Views: 131.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/1/user" for 127.0.0.1 at 2018-03-06 21:50:00 +0900
+Processing by BookController#user as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/user.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  Rendered book/user.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 117ms (Views: 108.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-06 21:50:02 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 131ms (Views: 128.4ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/users" for 127.0.0.1 at 2018-03-06 21:50:12 +0900
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fIActlFUQjgIGnzymGY+1F4b1sEtr9b+Ho6eImReuHRtwu4AhUNJN7BtiFL1vZKPP07cG5LX2xd3fgs7Wh+3AA==", "user"=>{"email"=>"fa@fa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"更新"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 296ms (Views: 101.1ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/users" for 127.0.0.1 at 2018-03-06 21:50:18 +0900
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AFi6dnJ/QVqgA6uop1XMTvWgv8VM6aj9wxrsIU4lqqEkgi/sMUiEMh12HRAEwR5vNG9xeSBtzPNn4ochoSjLVA==", "user"=>{"email"=>"fa@fa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"更新"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 182ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:50:18 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 126ms (Views: 122.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/1/user" for 127.0.0.1 at 2018-03-06 21:50:24 +0900
+Processing by BookController#user as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering book/user.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."rental_user" = ?[0m  [["rental_user", "fa@fa"]]
+  Rendered book/user.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 114ms (Views: 108.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-06 21:50:26 +0900
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 123ms (Views: 119.8ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/users" for 127.0.0.1 at 2018-03-06 21:50:28 +0900
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VzUXgO7lpJ5yfi5FeEmyLq8iL5riwUSOi82oOSksFtJGd+U2OvKvkcoJ2uUVkh51znclQF25SWfiPT0gF20Zpg==", "user"=>{"email"=>"fa@fa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"更新"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 318ms (Views: 128.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-06 21:52:13 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"users"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  Rendering book/show.html.erb within layouts/application
+  Rendered book/show.html.erb within layouts/application (3.7ms)
+Completed 401 Unauthorized in 43ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div class="container">
+    2:   <div class="book-details">
+    3:     <div class="title">
+    4:       <h1><%= @book.title %>/<%= @book.author %>著</h1>
+    5:     </div>
+    6:     <div class="table-responsive">
+    7:       <table class="table details text-center">
+  
+app/views/book/show.html.erb:4:in `_app_views_book_show_html_erb___3810878607915589890_70101337499280'
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:52:22 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (60.8ms)
+Completed 200 OK in 158ms (Views: 150.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-06 21:52:28 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 21:52:28 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 132ms (Views: 129.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-06 21:52:34 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"users"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  Rendering book/show.html.erb within layouts/application
+  Rendered book/show.html.erb within layouts/application (3.0ms)
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div class="container">
+    2:   <div class="book-details">
+    3:     <div class="title">
+    4:       <h1><%= @book.title %>/<%= @book.author %>著</h1>
+    5:     </div>
+    6:     <div class="table-responsive">
+    7:       <table class="table details text-center">
+  
+app/views/book/show.html.erb:4:in `_app_views_book_show_html_erb___3810878607915589890_70101374004720'
+Started GET "/" for 127.0.0.1 at 2018-03-06 22:02:46 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (68.9ms)
+Completed 200 OK in 161ms (Views: 151.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-06 22:02:54 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"users"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  Rendering book/show.html.erb within layouts/application
+  Rendered book/show.html.erb within layouts/application (3.2ms)
+Completed 401 Unauthorized in 20ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div class="container">
+    2:   <div class="book-details">
+    3:     <div class="title">
+    4:       <h1><%= @book.title %>/<%= @book.author %>著</h1>
+    5:     </div>
+    6:     <div class="table-responsive">
+    7:       <table class="table details text-center">
+  
+app/views/book/show.html.erb:4:in `_app_views_book_show_html_erb___3810878607915589890_70101325430480'
+Started GET "/users" for 127.0.0.1 at 2018-03-06 22:03:25 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"users"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 22:03:25 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (40.8ms)
+Completed 200 OK in 137ms (Views: 131.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-06 22:03:40 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"users"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 22:03:40 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (47.4ms)
+Completed 200 OK in 139ms (Views: 134.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/fafasfasfafa" for 127.0.0.1 at 2018-03-06 22:03:47 +0900
+Processing by BookController#show as HTML
+  Parameters: {"id"=>"fafasfasfafa"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-06 22:03:47 +0900
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "notices" WHERE "notices"."read" = ?[0m  [["read", "f"]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  Rendered book/index.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 116ms (Views: 112.4ms | ActiveRecord: 0.9ms)
+
+

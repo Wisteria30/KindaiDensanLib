@@ -1,0 +1,35 @@
+ja:
+  activerecord:
+    models:
+      book: 本  #g
+      notice: 通知  #g
+      user: ユーザー  #g
+
+    attributes:
+      book:
+        author: 著者  #g
+        genre: ジャンル  #g
+        isbn: Isbn  #g
+        publish_date: 公開日  #g
+        publisher: 出版社  #g
+        rental_user: レンタルユーザー  #g
+        status: 状態  #g
+        title: タイトル  #g
+
+      notice:
+        body: 体  #g
+        read: 読む  #g
+        sender: 送信者  #g
+        title: タイトル  #g
+
+      user:
+        admin_flg: 管理者レベル  #g
+        current_sign_in_at: 現在のログイン  #g
+        current_sign_in_ip: 現在の郵便番号  #g
+        email: Eメール  #g
+        encrypted_password: 暗号化されたパスワード  #g
+        last_sign_in_at: 最後にログインする  #g
+        last_sign_in_ip: ipの最後のサイン  #g
+        remember_created_at: 作成時の覚え書き  #g
+        reset_password_sent_at: 送信パスワードのリセット  #g
+        reset_password_token: パスワードトークンをリセットする  #g

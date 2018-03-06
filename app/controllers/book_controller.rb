@@ -1,13 +1,23 @@
 class BookController < ApplicationController
+
+  #-----------------リンク前の処理-----------------#
   before_action :authenticate_user!, only: [:notice, :detail, :show, :wantBook, :inquiry, :user]
 
   before_action :admin_user, {only: [:notice, :detail]}
 
+
+  #-----------------ページわけの値-----------------#
+  PER = 15
+
+
+  #-----------------ホーム-----------------#
   def index
-    @books = Book.all
+    @books = Book.page(params[:page]).per(3)
     @notices = Notice.where(read: false)
   end
 
+
+  #-----------------お知らせ-----------------#
   def notice
     @notices = Notice.where(read: false)
   end
@@ -23,6 +33,8 @@ class BookController < ApplicationController
     redirect_to "/notice"
   end
 
+
+  #-----------------検索-----------------#
   def search
     search = params[:search]
     @books = Book.where("title like '%"+ search + "%' ").or(
@@ -31,12 +43,16 @@ class BookController < ApplicationController
     Book.where("genre like '%"+ search + "%' "))
   end
 
+
+  #-----------------本関連-----------------#
   def show
-    @book = Book.find_by(id: params[:id])
-    begin
-      @books = Book.where(rental_user: current_user.email)
-    rescue => e
-      flash[:notice] ="ログインしてください"
+    if @book = Book.find_by(id: params[:id]) === nil
+      begin
+        @books = Book.where(rental_user: current_user.email)
+      rescue => e
+        flash[:notice] ="ログインしてください"
+        redirect_to("/")
+      end
       redirect_to("/")
     end
   end
@@ -53,6 +69,20 @@ class BookController < ApplicationController
     end
   end
 
+  def return
+    @book = Book.find_by(id: params[:id])
+    @book.status = true
+    @book.rental_user = nil
+    if @book.save
+      flash[:notice] = "返却しました"
+      redirect_to("/#{session[:rental_user]}/user")
+    else
+      render("#{@current_user.id}")
+    end
+  end
+
+
+  #-----------------購入申請-----------------#
   def wantBook
   end
 
@@ -71,6 +101,8 @@ class BookController < ApplicationController
     end
   end
 
+
+  #-----------------問い合わせ-----------------#
   def inquiry
   end
 
@@ -89,22 +121,14 @@ class BookController < ApplicationController
     end
   end
 
+
+  #-----------------ユーザ-----------------#
   def user
     @books = Book.where(rental_user: current_user.email)
   end
 
-  def return
-    @book = Book.find_by(id: params[:id])
-    @book.status = true
-    @book.rental_user = nil
-    if @book.save
-      flash[:notice] = "返却しました"
-      redirect_to("/#{session[:rental_user]}/user")
-    else
-      render("#{@current_user.id}")
-    end
-  end
 
+  #-----------------管理者権限フィルタ-----------------#
   def admin_user
     if user_signed_in?
       if !current_user.admin_flg
