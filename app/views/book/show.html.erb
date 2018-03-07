@@ -24,7 +24,7 @@
 
         <tr>
         <% if @book.status %>
-            <th>在庫あり</th>
+            <th>貸出可</th>
             <% if user_signed_in? && @books.count < 3 %>
               <div class="rentalBotton">
                 <td>
