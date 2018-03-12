@@ -59,7 +59,7 @@ gem 'devise'
 
 gem 'cancancan'
 
-gem 'rails_admin'
+gem 'rails_admin', '~> 1.3.0'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
 
