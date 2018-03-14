@@ -12,7 +12,7 @@ class BookController < ApplicationController
 
   #-----------------ホーム-----------------#
   def index
-    @books = Book.page(params[:page]).per(PER)
+    @books = Book.order('updated_at').page(params[:page]).per(PER)
     @notices = Notice.where(read: false)
   end
 
