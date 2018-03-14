@@ -71325,3 +71325,32 @@ Processing by RailsAdmin::MainController#index as HTML
 Completed 200 OK in 341ms (Views: 328.1ms | ActiveRecord: 2.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-14 19:08:21 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookController#index as HTML
+  Rendering book/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered book/index.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 13995ms (Views: 13968.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=java" for 127.0.0.1 at 2018-03-14 19:08:43 +0900
+Processing by BookController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"java"}
+  Rendering book/search.html.erb within layouts/application
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" WHERE ((((title ilike '%java%') OR (author ilike '%java%')) OR (publisher ilike '%java%')) OR (genre ilike '%java%'))[0m
+  Rendered book/search.html.erb within layouts/application (14.7ms)
+Completed 401 Unauthorized in 47ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "ilike": syntax error: SELECT COUNT(*) FROM "books" WHERE ((((title ilike '%java%') OR (author ilike '%java%')) OR (publisher ilike '%java%')) OR (genre ilike '%java%'))):
+     5:   </div>
+     6: </div>
+     7:   <div class="subtitle">
+     8:     <% if @books.count == 0 %>
+     9:       <h2>一致するものがありませんでした</h2>
+    10:     </div>
+    11:     <% else %>
+  
+app/views/book/search.html.erb:8:in `_app_views_book_search_html_erb___3137007073234230500_70190640013220'
