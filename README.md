@@ -1,24 +1,20 @@
-# README
+KindaiDensanLib
+====
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+このアプリはRubyonRailsを使用した近畿大学電子計算機研究会の書籍管理アプリで、書籍の有無・貸出の効率化ができます。
 
-Things you may want to cover:
+ユーザーはログインすることで書籍の貸し借りや書籍の購入希望、管理者への問い合わせを行うことができます。
+また、管理者権限を所有するユーザーは書籍やアカウントの追加・削除等を管理者ページから一括で管理統括することができます。
+詳しくは作品URL先のヘルプをご覧ください。
 
-* Ruby version
+注意点
+・本アプリは管理者がアカウントの追加を行う形なので、最初の使用者はCUIコマンド等を利用して、
+ローカルで管理者権限を持つアカウントを作成しなければならない。
 
-* System dependencies
 
-* Configuration
 
-* Database creation
+作品
+https://densanlibrary.herokuapp.com/
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+近畿大学電子計算機研究会HP
+http://kindai-csg.com/
