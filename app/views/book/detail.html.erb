@@ -6,13 +6,18 @@
     <h2>投稿者
       <%= User.find_by(id: @notice.sender).email %></h2>
   </div>
+  <form>
+    <div class="form-group">
   <div class="notice-contents">
     <h2>内容</h2>
     <div class="notice-body">
-      &nbsp;<%= @notice.body %>
+      <textarea name="body" readonly="readonly" class="form-control" style="font-size:20px"><%= @notice.body %></textarea>
+    <!--  &nbsp;<%= @notice.body %> -->
     </div>
     <%= form_tag("/notice/#{@notice.id}/read") do %>
 <button type="submit" class="btn btn-default kidoku" >既読をつける</button>
     <% end %>
   </div>
+</div>
+</form>
 </div>
